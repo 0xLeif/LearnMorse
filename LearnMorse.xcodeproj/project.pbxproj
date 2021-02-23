@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		5C0EB34C25E47E4300A08C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EB33725E47E4200A08C95 /* ContentView.swift */; };
 		5C0EB34D25E47E4300A08C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0EB33825E47E4300A08C95 /* Assets.xcassets */; };
 		5C0EB34E25E47E4300A08C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0EB33825E47E4300A08C95 /* Assets.xcassets */; };
+		5C0EB35B25E47E7900A08C95 /* Fake in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0EB35A25E47E7900A08C95 /* Fake */; };
+		5C0EB36025E47E8A00A08C95 /* Morse in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0EB35F25E47E8A00A08C95 /* Morse */; };
+		5C0EB36525E47F7800A08C95 /* Fake in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0EB36425E47F7800A08C95 /* Fake */; };
+		5C0EB36725E47F7800A08C95 /* Morse in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0EB36625E47F7800A08C95 /* Morse */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0EB35B25E47E7900A08C95 /* Fake in Frameworks */,
+				5C0EB36025E47E8A00A08C95 /* Morse in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0EB36525E47F7800A08C95 /* Fake in Frameworks */,
+				5C0EB36725E47F7800A08C95 /* Morse in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,7 @@
 				5C0EB33F25E47E4300A08C95 /* iOS */,
 				5C0EB34625E47E4300A08C95 /* macOS */,
 				5C0EB33E25E47E4300A08C95 /* Products */,
+				5C0EB36325E47F7800A08C95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +99,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		5C0EB36325E47F7800A08C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +122,10 @@
 			dependencies = (
 			);
 			name = "LearnMorse (iOS)";
+			packageProductDependencies = (
+				5C0EB35A25E47E7900A08C95 /* Fake */,
+				5C0EB35F25E47E8A00A08C95 /* Morse */,
+			);
 			productName = "LearnMorse (iOS)";
 			productReference = 5C0EB33D25E47E4300A08C95 /* LearnMorse.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +143,10 @@
 			dependencies = (
 			);
 			name = "LearnMorse (macOS)";
+			packageProductDependencies = (
+				5C0EB36425E47F7800A08C95 /* Fake */,
+				5C0EB36625E47F7800A08C95 /* Morse */,
+			);
 			productName = "LearnMorse (macOS)";
 			productReference = 5C0EB34525E47E4300A08C95 /* LearnMorse.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 5C0EB33025E47E4200A08C95;
+			packageReferences = (
+				5C0EB35925E47E7900A08C95 /* XCRemoteSwiftPackageReference "Fake" */,
+				5C0EB35E25E47E8A00A08C95 /* XCRemoteSwiftPackageReference "Morse" */,
+			);
 			productRefGroup = 5C0EB33E25E47E4300A08C95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +467,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C0EB35925E47E7900A08C95 /* XCRemoteSwiftPackageReference "Fake" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Fake";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		5C0EB35E25E47E8A00A08C95 /* XCRemoteSwiftPackageReference "Morse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Morse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C0EB35A25E47E7900A08C95 /* Fake */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0EB35925E47E7900A08C95 /* XCRemoteSwiftPackageReference "Fake" */;
+			productName = Fake;
+		};
+		5C0EB35F25E47E8A00A08C95 /* Morse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0EB35E25E47E8A00A08C95 /* XCRemoteSwiftPackageReference "Morse" */;
+			productName = Morse;
+		};
+		5C0EB36425E47F7800A08C95 /* Fake */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0EB35925E47E7900A08C95 /* XCRemoteSwiftPackageReference "Fake" */;
+			productName = Fake;
+		};
+		5C0EB36625E47F7800A08C95 /* Morse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0EB35E25E47E8A00A08C95 /* XCRemoteSwiftPackageReference "Morse" */;
+			productName = Morse;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C0EB33125E47E4200A08C95 /* Project object */;
 }

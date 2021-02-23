@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Fake",
+        "repositoryURL": "https://github.com/0xLeif/Fake",
+        "state": {
+          "branch": null,
+          "revision": "617cc60b35040494923304ad1c3fd4356371daaa",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "Morse",
+        "repositoryURL": "https://github.com/0xLeif/Morse",
+        "state": {
+          "branch": null,
+          "revision": "f6f999dc70148904eda6d185f40fada6348e8e76",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
